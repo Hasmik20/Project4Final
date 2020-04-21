@@ -1,0 +1,35 @@
+
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+@import '../utilities/variables',
+        '../utilities/mixins';
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color:$white;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    @include media($break-m){
+      padding: 10px 30px;
+    }
+  }
+  @include media($break-m) {
+  .btn + .btn {
+      margin-left: 10px;
+    }
+  }
+  @each $button, $color in $btns {
+    #{$button}{
+      background-color: $color;
+    }
+    #{$button}:hover {
+      background-color: lighten($color, 15%);
+    }
+  
+  }
+  
+  

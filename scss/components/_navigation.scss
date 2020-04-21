@@ -1,0 +1,40 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+@import '../utilities/variables',
+        '../utilities/mixins';
+
+.nav {
+  @include flexy($dir:column);
+    padding-left: 0;
+    flex-basis: 100%;
+    .nav-link {
+      text-align: center;
+      border-radius: 5px;
+      padding: 10px 0;
+      display: block;
+      width: 100%;
+      transition: 
+        background-color .2s ease-in-out, 
+        color .2s ease-in-out;
+        &:hover {
+          color:$white;
+          background-color:$color-link-hover;
+        }
+    }
+    @include media($break-m) {
+        @include flexy($dir:row, $just: flex-end);
+        align-items: center;
+      
+      .nav-link {
+        flex-basis: 100px;
+      }   
+      }
+  }
+  
+  
+
+  
+ 
+  
+  

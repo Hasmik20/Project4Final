@@ -1,0 +1,40 @@
+
+/* ============================================= */
+/*              Images                           */
+/* ============================================= */
+@import '../utilities/variables',
+        '../utilities/mixins';
+%img-center{
+  display: block;
+  @include center(100%);
+    margin-top: 10px;
+    
+}
+.img{
+
+  &-avatar {
+    @extend %img-center;
+    max-height: 100%;
+  }
+ 
+  &-frame {
+    @extend %img-center;
+    margin-top: 10px;
+    padding: 13px;
+    border: 1px solid #ccc;
+  }
+  
+  &-logo {
+    display: block;
+    @include center;
+    
+  }
+   
+    .logo {
+     @include media ($break-m){
+      margin-left: initial;
+      margin-right: initial;
+    }
+  }
+
+}
