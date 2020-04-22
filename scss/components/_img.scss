@@ -2,8 +2,7 @@
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
-@import '../utilities/variables',
-        '../utilities/mixins';
+
 %img-center{
   display: block;
   @include center(100%);

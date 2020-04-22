@@ -3,8 +3,7 @@
 /* ============================================= */
 /*              Grid System                      */
 /* ============================================= */
-@import '../utilities/variables',
-        '../utilities/mixins';
+
 .container {
   padding: 0 10px;
 
@@ -53,11 +52,13 @@
   }
 }
 
+
 @each $grid, $bg-color in $grids {
- .theme#{$grid}{
-    background-color: $bg-color;
-  }
-}
+  .theme#{$grid}{
+     background-color: $bg-color;
+   }
+ }
+ 
 
 // .theme.col-1 {
 //   background-color: #927bc1;
@@ -103,9 +104,9 @@
 //   background-color: #51ddfc;
 // }
 
-// .theme.col-12 {
-//   background-color: #80e8d1;
-// }
+.theme.col-12 {
+  background-color: #80e8d1;
+}
 .card {
   flex-basis: 100%;
 }

@@ -1,8 +1,7 @@
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
-@import '../utilities/variables',
-        '../utilities/mixins';
+
 
 .nav {
   @include flexy($dir:column);

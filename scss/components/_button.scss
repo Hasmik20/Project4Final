@@ -2,8 +2,7 @@
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
-@import '../utilities/variables',
-        '../utilities/mixins';
+
 .btn {
     margin-top: 15px;
     width: 100%;
@@ -29,7 +28,6 @@
     #{$button}:hover {
       background-color: lighten($color, 15%);
     }
-  
   }
   
   
